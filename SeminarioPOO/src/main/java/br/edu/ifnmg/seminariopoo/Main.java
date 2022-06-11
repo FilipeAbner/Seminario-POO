@@ -1,13 +1,14 @@
 package br.edu.ifnmg.seminariopoo;
 
 public class Main {
+
     public static void main(String[] args) {
-        Cliente cliente = new ProxyCliente(" Banco de Dados", "Jailson");
-        
-        cliente.enviarInformacoes();
+        Cliente clienteProxy = new ProxyCliente(" 'Dados de pagamento para funcionários'", " Jailson");
+
+        clienteProxy.enviarInformacoes();
         System.out.println();
-        
-        cliente.enviarInformacoes();
+
+        clienteProxy.enviarInformacoes();
         System.out.println();
     }
 }
